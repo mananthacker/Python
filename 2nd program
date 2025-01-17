@@ -1,0 +1,15 @@
+def find_largest_and_smallest(a, b):
+    if a > b:
+        largest = a
+        smallest = b
+    else:
+        largest = b
+        smallest = a
+    return largest, smallest
+
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+largest, smallest = find_largest_and_smallest(num1, num2)
+print(f"The largest value is: {largest}")
+print(f"The smallest value is: {smallest}")
